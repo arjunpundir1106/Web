@@ -1,0 +1,200 @@
+@import "utilities1.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+}
+body{
+    font-family: "poppins",sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color: #161616;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 90%,0 98%);
+    
+}
+
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+}
+header nav .left a:hover{
+    color: #3DCFD3;
+}
+header nav{
+    padding: 2rem;
+
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+.hero .left img{
+    width:772px;
+    height: 800px;
+    padding: 3rem 0;
+    
+}
+.hero .right{
+   color: var(--pure);
+   margin-top: -7rem;
+
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size:4rem ;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section{
+    padding: 6rem 0;
+
+}
+section.about .about-me-image{
+height: 450px;
+}
+section.about h1{
+    margin-bottom:1rem ;
+    font-size: 1.6rem;
+    font-weight: 1200;
+}
+section.about h1 span{
+    color: var(--primary);
+    font-weight: 400;
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    
+}
+section.about p{
+    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+section.about .social a:hover{
+    background: var(--primary);
+    
+}
+
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading +p{
+    color: var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.services
+{
+    background: var(--light);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns:repeat(3, 2fr);
+    grid-column-gap:2rem;
+    grid-row-gap:2rem;
+    width: 200px;
+}
+section.services .card-wrapper .card{
+    background:black;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.services .card-wrapper .card img{
+    position:absolute;
+    top:-3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
+section.services .card-wrapper .card h2{
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family:'Helvetica Neue';
+    
+    line-height: 1.6;
+    color: #444141;
+
+}
+section.services .card-wrapper .card:hover{
+    background: rgb(161, 158, 158);
+}
+section.services .card-wrapper .card h2,section.services .card-wrapper .card p{
+    color: var(--pure);
+
+}
